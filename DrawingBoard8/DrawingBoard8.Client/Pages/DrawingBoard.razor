@@ -82,7 +82,7 @@ else
                 connectedUsers.Add(new User { Name = name, Color = color });
                 StateHasChanged();
             });
-        });
+        });  
 
         hubConnection.On<string>("UserDisconnected", async (name) =>
         {
